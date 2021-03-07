@@ -1,0 +1,144 @@
+controller.cs
+
+ //public void AddProduct(Product product)
+        //{
+        //    prdct.Add(product);
+        //    Save?.Invoke(prdct, "Products.txt");
+        //}   
+
+ //controller.AddProduct(new TV("0012983", 7, "TV", "Samsung", 450000, "12.06.2019", 80));
+            //controller.AddProduct(new TV("2471264", 5, "TV", "Apple", 230000, "27.11.2018", 50));
+            //controller.AddProduct(new Vacuum_Cleaner("62347", 15, "vacuum_cleaner","Toshiba", 90000, "09.04.2016", 1300));
+            controller.Load_Product();
+            controller.Show_pr();
+            //controller.AddProduct();
+            //controller.Show_pr();
+
+
+
+
+            Console.WriteLine();
+            //controller.Load_Zakaz();
+            //controller.Show_zkz();
+            Console.WriteLine();
+            //controller.AddZakaz(new Zakaz("891723894328", "Sanzhar", "876", "TV", "05.10.17", "450 000"));
+            //controller.AddZakaz(new Zakaz("962346756736", "Tolkyn", "675", "Vacuum_Cleaner", "27.01.21", "90 000"));
+            //controller.AddZakaz(new Zakaz("125367732456", "Asem", "093", "Vacuum_Cleaner", "19.08.15", "110 000"));
+            //controller.Show_zkz();
+            //controller.Load_Score();
+            //controller.Show_scr();
+            //controller.UpDate_SCR();
+            //controller.Show_scr();
+
+ProductList
+
+ //public void Add(Product product) => prdct.Add(product);
+
+//if (a == 2)
+            //{
+            //    Console.WriteLine("ведите сегоднешнию дату");
+            //    string DATE = Console.ReadLine();
+
+            //    Console.WriteLine("ведите id товара которого хотите добавить");
+            //    string ID = Console.ReadLine();
+
+            //    bool f = false;
+
+            //    foreach (Product s in prdct)
+            //        if (s.ID == ID) f = true;
+
+            //    if (f)
+            //    {
+            //        Console.WriteLine("данный товар уже имеется на складе");
+            //        Console.WriteLine("ведите кол-во приобретенного товара");
+            //        int ammount;
+            //        ammount = Convert.ToInt32(Console.Read());
+
+            //        foreach (Product s in prdct)
+            //            if (s.ID == ID)
+            //            {
+            //                s.Count += ammount;
+            //                scr.Add(new Score(DATE, s.Name, 0, s.Price * ammount));
+            //                break;
+            //            }
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("такого товара нет!");
+
+            //        string cotegory = "Vacuum_Cleaner";
+            //        Console.WriteLine("введите айди ");
+            //        string id_product = Console.ReadLine();
+            //        Console.WriteLine("его фирму");
+            //        string name = Console.ReadLine();
+            //        Console.WriteLine("его цену");
+            //        int price = Convert.ToInt32(Console.ReadLine());
+            //        Console.WriteLine("и мощность");
+            //        string power = Console.ReadLine();
+
+            //        Console.WriteLine("введите кол-во товара");
+            //        int amount = Convert.ToInt32(Console.ReadLine());
+
+            //        prdct.Add(new Vacuum_Cleaner(cotegory, id_product, amount, name, price, DATE, power));
+            //        scr.Add(new Score(DATE, name, 0, price * amount));
+            //    }
+            //}
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+        // public void Add(Score score) => scr.Add(score);
+        //public void LoadSCR()
+        //{
+        //    //zkz.Clear();
+        //    StreamReader sr = new StreamReader("Score.txt");
+        //    int count = System.IO.File.ReadAllLines("Score.txt").Length;
+        //    string[] str = new string[count];
+
+        //    for (int i = 0; i < count; i++)
+        //    {
+        //        str[i] = sr.ReadLine();
+        //    }
+
+        //    string[] d = new string[count];
+
+        //    for (int i = 0; i < count; i++)
+        //    {
+        //        d = str[i].Split(' ');
+        //        int prihod = Convert.ToInt32(d[2]);
+        //        int raskhod = Convert.ToInt32(d[3]);
+        //        scr.Add(new Score(d[0], d[1], prihod,raskhod));
+        //    }
+        //    sr.Close();
+        //}
+
+--------------------------------------------------------------------------------------------------------------------
+
+62347 18 Vacuum_Cleaner Toshiba 90990 09.04.2018 50
+77789 7 TV Panasonic 230000 26.06.18 42
+52347 9 Vacuum_Cleaner Xiaomi 85990 12.08.2018 45
+12871 11 TV Sharp 190990 30.11.18 35
+42345 15 Vacuum_Cleaner Thomas 110590 15.01.2019 55
+89348 20 TV Sony 150990 21.03.19 28
+13782 10 Vacuum_Cleaner Karcher 65590 13.05.2019 40
+09843 16 Vacuum_Cleaner Bosch 89590 29.07.2019 50
+98412 5 TV Haie 210500 18.09.19 43
+12837 8 TV Hisense 140690 02.12.29 37
+65432 15 TV Samsung 240990 19.02.20 37
+12390 4 TV Philips 320000 24.05.20 55
+88990 4 Vacuum_Cleaner Bosh 76990 05.07.20 50
+11234 5 Vacuum_Cleaner Coteck 92190 12.19.21 60
+
+09.04.2018 Vacuum_Cleaner 0 1637820
+26.06.18 TV 0 1610000
+12.08.2018 Vacuum_Cleaner 0 773910
+30.11.18 TV 0 2100890
+15.01.2019 Vacuum_Cleaner 0 1658850
+21.03.19 TV 0 3019800
+13.05.2019 Vacuum_Cleaner 0 655900
+29.07.2019 Vacuum_Cleaner 0 1433440
+18.09.19 TV 0 1052500
+02.12.29 TV 0 1125520
+19.02.20 TV 0 3614850
+24.05.20 TV 0 1280000
+04.07.20 TV 0 1680000
